@@ -1,5 +1,5 @@
 # Image Compression and Denoising using FFT
-This repo gives information about the decompression and denoising of a noisy image using FFT. 
+This repo gives information about the compression and denoising of a noisy image using FFT. 
 
 ## Image Compression: 
 The goal of compression is to compress an image using the Fourier Transform by manipulating the resulting Fourier Space by removing the frequencies above a cutoff frequency that the human eye might not perceive. 
