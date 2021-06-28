@@ -35,7 +35,7 @@ def low_pass_filter(spectrum, thresh):
 
     distance_matrix = get_dist_from_center_matrix(shifted)
 
-    #Applying a black or white mask depending on whether the distance from center is greater than threshold 
+    #Create a black or white mask depending on whether the distance from center is greater than threshold 
     circle_mask = np.where(distance_matrix > max_distance_sq, 0, 1)
     
     #Applying the mask created on the shifted spectrum
