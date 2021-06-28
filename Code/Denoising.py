@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 
 """ Denoising the image.
-    The goal is to remove the noise from the provided images (in resources/) by applying a lowpass filter.
+    The goal is to remove the noise from the provided images by applying a lowpass filter.
     that removes the frequencies above a cutoff frequency. 
 """
 def noise():
