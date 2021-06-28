@@ -1,11 +1,11 @@
-# Image Decompression and Denoising using FFT
+# Image Compression and Denoising using FFT
 This repo gives information about the decompression and denoising of a noisy image using FFT. 
 
-## Decompression: 
-The goal of decompression is to compress an image using the Fourier Transform by manipulating the resulting Fourier Space by removing the frequencies above a cutoff frequency that the human eye might not perceive. 
+## Image Compression: 
+The goal of compression is to compress an image using the Fourier Transform by manipulating the resulting Fourier Space by removing the frequencies above a cutoff frequency that the human eye might not perceive. 
 
 ### Design Pipeline
-The Design pipeline of decompression is as follows:
+The Design pipeline of compression is as follows:
 * Specify the degree of compression, ranging from 0 to 9, 0 being not compressed at all and 9 "relatively" compressed to max. 
 * Read the noisy image.
 * Find the fast fourier transform of the image using FFT. 
