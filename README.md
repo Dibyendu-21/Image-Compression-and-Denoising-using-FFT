@@ -1,6 +1,9 @@
 # Image Compression and Denoising using FFT
 This repo gives information about the compression and denoising of a noisy image using FFT. 
 
+#### Noisy Image
+![Noisy Image](Input/Noisy_Image.png?raw=true)
+
 ## Image Compression: 
 The goal of compression is to compress an image using the Fourier Transform by manipulating the resulting Fourier Space by removing the frequencies above a cutoff frequency that the human eye might not perceive. 
 
@@ -21,6 +24,8 @@ The Design pipeline of compression is as follows:
 * Covert the real part of the transformed spectrum to 8-bit number space.
 * Display the compressed image.
 
+#### Compresed Image
+![Compresed Image](Output/compressed.png?raw=true)
 ## Denoising: 
 The goal of denoising is to remove the noise from the provided images by applying a lowpass filter that removes the frequencies above a cutoff frequency. 
 
@@ -38,4 +43,8 @@ The Design pipeline of denoising is as follows:
   - Shift the DC component back to top-left portion of spectrum using inverse fourier shift.
 * Retransform the spectrum from frequency domain to time domain using inverse fourier transform.
 * Keep only the real part of the transformed image and removing the imaginary part.
+
+#### Denoised Image
+![Denoised Image](Output/Denoised.png?raw=true)
+
 
